@@ -70,21 +70,25 @@ Paso 3: Ejecutar el Script
 Haz clic en el botón de Ejecutar (ícono de play en el editor de Apps Script).
 La primera vez que ejecutes el script, se te pedirá que autorices el acceso de Google Apps Script a tu cuenta.
 Después de ejecutar el script, se generará un formulario en Google Forms.
+
 La URL del formulario se mostrará en el registro de Apps Script (puedes verla bajo Ver > Registro).
 Paso 4: Obtener la URL del Formulario
 Una vez ejecutado el script, el enlace del formulario se muestra en el registro de Apps Script. Puedes acceder al formulario usando ese enlace.
 Personalización
+
 Preguntas: Puedes modificar el rango de preguntas cambiando la referencia sheet.getRange('C9:C') si tus preguntas están en otro rango.
+
 Opciones de respuesta: Si las opciones de respuesta son diferentes o están en un rango distinto, ajusta la referencia sheet.getRange('K8:K11') a la ubicación correspondiente.
+
 Tipo de Pregunta: El script está configurado para crear preguntas tipo "Lista desplegable". Si prefieres otro tipo de pregunta (por ejemplo, opción múltiple), puedes modificar form.addListItem() por form.addMultipleChoiceItem().
+
 Limitaciones
 Este script supone que todas las preguntas tienen las mismas opciones. Si tienes diferentes opciones para cada pregunta, el script necesitaría modificaciones adicionales.
 El script no maneja validación de preguntas obligatorias o tipos de pregunta complejos, aunque se pueden agregar funcionalidades personalizadas.
+
 Recursos adicionales
 Google Apps Script Documentation
 Google Sheets API
-
-
 
 ### Explicación de la documentación:
 
