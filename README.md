@@ -92,9 +92,9 @@ Google Sheets API
 
 ### Explicación de la documentación:
 
-- **Introducción**: Explica qué hace el script, cómo genera el formulario y qué datos necesita.
-- **Requisitos**: Lista los elementos necesarios para ejecutar el script.
-- **Instrucciones**: Guía paso a paso sobre cómo usar el script, incluyendo cómo configurar Google Sheets, configurar Google Apps Script y ejecutar el script.
-- **Personalización**: Explica cómo modificar el código si necesitas adaptarlo a tus necesidades.
-- **Limitaciones**: Señala algunas de las limitaciones que tiene el script en su forma actual.
-- **Recursos adicionales**: Enlaces a la documentación oficial para obtener más detalles sobre **Google Apps Script** y **Google Sheets API**.
+- Introducción: Explica qué hace el script, cómo genera el formulario y qué datos necesita.
+- Requisitos: Lista los elementos necesarios para ejecutar el script.
+- Instrucciones: Guía paso a paso sobre cómo usar el script, incluyendo cómo configurar Google Sheets, configurar Google Apps Script y ejecutar el script.
+- Personalización: Explica cómo modificar el código si necesitas adaptarlo a tus necesidades.
+- Limitaciones: Señala algunas de las limitaciones que tiene el script en su forma actual.
+- Recursos adicionales: Enlaces a la documentación oficial para obtener más detalles sobre **Google Apps Script** y **Google Sheets API**.
