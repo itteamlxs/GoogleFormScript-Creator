@@ -1,0 +1,30 @@
+function createForm() {
+  // Abre la hoja de cálculo activa y selecciona la hoja correcta
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Hoja1');
+  
+  // Abre el formulario
+  var form = FormApp.create('Nuevo Formulario');
+  
+  // Obtén las preguntas desde la columna C, comenzando desde la fila 9
+  var questionsRange = sheet.getRange('C9:C'); 
+  var questions = questionsRange.getValues().filter(String);  // Filtra para evitar valores vacíos
+  
+  // Obtén las opciones desplegables desde el rango K8:K11
+  var optionsRange = sheet.getRange('K8:K11');
+  var options = optionsRange.getValues().filter(String).map(function(row) {
+    return row[0];  // Devuelve un array de opciones en una sola dimensión
+  });
+
+  // Crear preguntas y agregar opciones desplegables
+  questions.forEach(function(row, index) {
+    var questionText = row[0];  // La pregunta en la fila correspondiente
+    
+    // Agregar la pregunta con las opciones desplegables
+    var item = form.addListItem();
+    item.setTitle(questionText)
+        .setChoiceValues(options);  // Asigna las opciones desde el rango K8:K11
+  });
+
+  // Muestra la URL del formulario creado
+  Logger.log('Formulario creado: ' + form.getEditUrl());
+}
